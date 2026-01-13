@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_qkyQ4fClEfCBo43b0cnoxg" name="CNX_CSV_UBICACION_GEOGRAFICA" dataPackage="_qkyQ4vClEfCBo43b0cnoxg" Server="Localhost 127.0.0.1" FilePath="C:/talend/genius2/ERP/BaseDeDatosERP/UBICACION_GEOGRAFICA.csv" Encoding="windows-1252" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_qkyQ4vClEfCBo43b0cnoxg" name="default" dataManager="_qkyQ4fClEfCBo43b0cnoxg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_qkyQ4_ClEfCBo43b0cnoxg" id="_cl57MPClEfCBo43b0cnoxg" label="UBICACION_GEOGRAFICA">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qkyQ5PClEfCBo43b0cnoxg" label="COD_UBICACION" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qkyQ5fClEfCBo43b0cnoxg" label="UBICACION" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qkyQ5vClEfCBo43b0cnoxg" label="COD_PADRE_UBICACION" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
