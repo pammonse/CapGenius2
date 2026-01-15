@@ -99,26 +99,16 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="120">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_wMVeUPCcEfCBo43b0cnoxg" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-KgUQPCaEfCBo43b0cnoxg" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_wMVeUPCcEfCBo43b0cnoxg - FACTURA" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_-KgUQPCaEfCBo43b0cnoxg - CLIENTE" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/talend/genius2/ERP/BaseDeDatosERP/FACTURA.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/talend/genius2/ERP/BaseDeDatosERP/CLIENTE.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -132,7 +122,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_wMVeUPCcEfCBo43b0cnoxg - FACTURA" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_-KgUQPCaEfCBo43b0cnoxg - CLIENTE" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -141,22 +131,20 @@
     <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_FACTURA" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEDULA" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CEDULA" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOMBRES" id="2"/>
       <elementValue elementRef="TRIM" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FECHA_EMISION" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APELLIDOS" id="4"/>
       <elementValue elementRef="TRIM" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTORIZACION" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIRECCION_CASA" id="6"/>
       <elementValue elementRef="TRIM" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MONTO" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIRECCION_OFICINA" id="8"/>
       <elementValue elementRef="TRIM" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IVA" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TELEFONO_CASA" id="10"/>
       <elementValue elementRef="TRIM" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCUENTO" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TELEFONO_OFICINA" id="12"/>
       <elementValue elementRef="TRIM" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COD_LOCAL" id="14"/>
-      <elementValue elementRef="TRIM" value="false" id="15"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
@@ -165,47 +153,43 @@
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
     <elementParameter field="TABLE" name="DECODE_COLS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_FACTURA" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEDULA" id="0"/>
       <elementValue elementRef="DECODE" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CEDULA" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOMBRES" id="2"/>
       <elementValue elementRef="DECODE" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FECHA_EMISION" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APELLIDOS" id="4"/>
       <elementValue elementRef="DECODE" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTORIZACION" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIRECCION_CASA" id="6"/>
       <elementValue elementRef="DECODE" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MONTO" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIRECCION_OFICINA" id="8"/>
       <elementValue elementRef="DECODE" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IVA" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TELEFONO_CASA" id="10"/>
       <elementValue elementRef="DECODE" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCUENTO" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TELEFONO_OFICINA" id="12"/>
       <elementValue elementRef="DECODE" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COD_LOCAL" id="14"/>
-      <elementValue elementRef="DECODE" value="false" id="15"/>
     </elementParameter>
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="CNX_CSV_FACTURA"/>
+    <elementParameter field="TEXT" name="LABEL" value="CNX_CSV_CLIENTE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="FACTURA" name="tFileInputDelimited_1">
-      <column comment="" key="false" length="13" name="NUM_FACTURA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CEDULA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="FECHA_EMISION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="AUTORIZACION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="MONTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="IVA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="DESCUENTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="COD_LOCAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="CLIENTE" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="10" name="CEDULA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="NOMBRES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="APELLIDOS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="DIRECCION_CASA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="DIRECCION_OFICINA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="TELEFONO_CASA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="TELEFONO_OFICINA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" label="FACTURA" name="REJECT">
-      <column comment="" key="false" length="13" name="NUM_FACTURA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CEDULA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="FECHA_EMISION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="AUTORIZACION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="MONTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="IVA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="DESCUENTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="COD_LOCAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="REJECT" label="CLIENTE" name="REJECT">
+      <column comment="" key="false" length="10" name="CEDULA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="NOMBRES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="APELLIDOS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="DIRECCION_CASA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="DIRECCION_OFICINA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="TELEFONO_CASA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="TELEFONO_OFICINA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -215,7 +199,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_FpOacPFdEfCT84BzUF8b-A-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_0sBLcPGpEfCW0eTsPMpUZQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -224,46 +208,53 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="13" name="NUM_FACTURA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CEDULA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="FECHA_EMISION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="AUTORIZACION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="MONTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="IVA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="DESCUENTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="COD_LOCAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" name="CLIENTE">
+      <column comment="" defaultValue="" key="true" length="-1" name="ID_CLIENTE" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CEDULA" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="NOMBRES" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="APELLIDOS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DIRECCION_CASA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DIRECCION_OFICINA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="TELEFONO_CASA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="TELEFONO_OFICINA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DT_CARGA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="TalendDate.getCurrentDate() " type="id_Date"/>
+        <mapperTableEntries name="ID_CLIENTE" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_Integer"/>
+        <mapperTableEntries name="NOMBRES" expression="StringHandling.UPCASE(StringHandling.TRIM(row1.NOMBRES)) " type="id_String"/>
+        <mapperTableEntries name="APELLIDOS" expression="StringHandling.UPCASE(StringHandling.TRIM(row1.APELLIDOS)) " type="id_String"/>
+        <mapperTableEntries name="DIRECCION_CASA" expression="StringHandling.UPCASE(row1.DIRECCION_CASA ) " type="id_String"/>
+        <mapperTableEntries name="DIRECCION_OFICINA" expression="StringHandling.UPCASE(row1.DIRECCION_OFICINA ) " type="id_String"/>
+        <mapperTableEntries name="CEDULA" expression="StringHandling.TRIM(row1.CEDULA) " type="id_String"/>
+        <mapperTableEntries name="TELEFONO_CASA" expression="StringHandling.TRIM(row1.TELEFONO_CASA) " type="id_String"/>
+        <mapperTableEntries name="TELEFONO_OFICINA" expression="StringHandling.TRIM(row1.TELEFONO_OFICINA) " type="id_String"/>
+        <mapperTableEntries name="DT_CARGA" expression="TalendDate.getCurrentDate() " type="id_Date"/>
       </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="NUM_FACTURA" expression="row1.NUM_FACTURA " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CEDULA" expression="row1.CEDULA " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="FECHA_EMISION" expression="row1.FECHA_EMISION " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="AUTORIZACION" expression="row1.AUTORIZACION " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="MONTO" expression="row1.MONTO " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="IVA" expression="row1.IVA " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="DESCUENTO" expression="row1.DESCUENTO " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="COD_LOCAL" expression="row1.COD_LOCAL " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DT_CARGA" expression="Var.var1 " type="id_Date"/>
+      <outputTables sizeState="INTERMEDIATE" name="CLIENTE">
+        <mapperTableEntries name="ID_CLIENTE" expression="Var.ID_CLIENTE " type="id_Integer"/>
+        <mapperTableEntries name="CEDULA" expression="Var.CEDULA " type="id_String"/>
+        <mapperTableEntries name="NOMBRES" expression="Var.NOMBRES " type="id_String" nullable="true"/>
+        <mapperTableEntries name="APELLIDOS" expression="Var.APELLIDOS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIRECCION_CASA" expression="Var.DIRECCION_CASA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIRECCION_OFICINA" expression="Var.DIRECCION_OFICINA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TELEFONO_CASA" expression="Var.TELEFONO_CASA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TELEFONO_OFICINA" expression="Var.TELEFONO_OFICINA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DT_CARGA" expression="Var.DT_CARGA " type="id_Date"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="NUM_FACTURA" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CEDULA" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="FECHA_EMISION" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="AUTORIZACION" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="MONTO" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="IVA" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="DESCUENTO" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="COD_LOCAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CEDULA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOMBRES" type="id_String" nullable="true"/>
+        <mapperTableEntries name="APELLIDOS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIRECCION_CASA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIRECCION_OFICINA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TELEFONO_CASA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TELEFONO_OFICINA" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="120">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMysqlOutput" show="false"/>
     <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
@@ -275,17 +266,17 @@
     <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_57JdcPDSEfCBo43b0cnoxg" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_UWuI0PGNEfCT84BzUF8b-A" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;23.108.55.228&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;DSADEV&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWHDEV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;usr_acme&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SvldxZRUexlhrt3O0D7cr9c0mGwF/RqXfTF2eahjB3wqt7Rlmg=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FACTURA_PL&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QBmtom5ey41j/XVAfUWmIDUak6Kb7voObBtLLKMrplmvInkGcg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DIM_CLIENTE_PL&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -302,7 +293,7 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_FACTURA" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_CLIENTE" id="0"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
       <elementValue elementRef="UPDATABLE" value="true" id="3"/>
@@ -312,32 +303,32 @@
       <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
       <elementValue elementRef="UPDATABLE" value="true" id="8"/>
       <elementValue elementRef="INSERTABLE" value="true" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FECHA_EMISION" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOMBRES" id="10"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
       <elementValue elementRef="UPDATABLE" value="true" id="13"/>
       <elementValue elementRef="INSERTABLE" value="true" id="14"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTORIZACION" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APELLIDOS" id="15"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
       <elementValue elementRef="UPDATABLE" value="true" id="18"/>
       <elementValue elementRef="INSERTABLE" value="true" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MONTO" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIRECCION_CASA" id="20"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
       <elementValue elementRef="UPDATABLE" value="true" id="23"/>
       <elementValue elementRef="INSERTABLE" value="true" id="24"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IVA" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIRECCION_OFICINA" id="25"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
       <elementValue elementRef="UPDATABLE" value="true" id="28"/>
       <elementValue elementRef="INSERTABLE" value="true" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCUENTO" id="30"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TELEFONO_CASA" id="30"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
       <elementValue elementRef="UPDATABLE" value="true" id="33"/>
       <elementValue elementRef="INSERTABLE" value="true" id="34"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COD_LOCAL" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TELEFONO_OFICINA" id="35"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
       <elementValue elementRef="UPDATABLE" value="true" id="38"/>
@@ -354,29 +345,29 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="CNX_SS"/>
+    <elementParameter field="TEXT" name="LABEL" value="CNX_SS_DWH"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="false" length="13" name="NUM_FACTURA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CEDULA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="FECHA_EMISION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="AUTORIZACION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="MONTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="IVA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="DESCUENTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="COD_LOCAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DT_CARGA" nullable="false" pattern="" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="ID_CLIENTE" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CEDULA" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="NOMBRES" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="APELLIDOS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DIRECCION_CASA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DIRECCION_OFICINA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="TELEFONO_CASA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="TELEFONO_OFICINA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_CARGA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="13" name="NUM_FACTURA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CEDULA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="FECHA_EMISION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="AUTORIZACION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="MONTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="IVA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="DESCUENTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="COD_LOCAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DT_CARGA" nullable="false" pattern="" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="ID_CLIENTE" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CEDULA" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="NOMBRES" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="APELLIDOS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DIRECCION_CASA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DIRECCION_OFICINA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="TELEFONO_CASA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="TELEFONO_OFICINA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_CARGA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -385,9 +376,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="CLIENTE" lineStyle="0" metaname="CLIENTE" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="CLIENTE" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
